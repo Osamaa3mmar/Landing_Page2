@@ -1,0 +1,76 @@
+.navbar{
+    padding: 2rem 53px;
+}
+.navbar nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color: var(--text-dark);
+    font-family: var(--header-font);
+    font-size: 1.75rem;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    font-family: Poppins;
+    gap: 2rem;
+}
+nav ul li a {
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    color:var(--text-dark);
+    padding-bottom:10px ;
+    transition: 500ms;
+}
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0px ;
+    height: 4px;
+    width: 100%;
+    background-color: var(--primary-color);
+    opacity: 0;
+    transition: 500ms;
+}
+
+nav ul li a:hover:after{
+    opacity: 1;
+}
+nav .btns{
+    display: flex;
+    align-items:center;
+    gap: 20px;
+}
+.btns .btn{
+    border: none;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    transition: 300ms;
+}
+
+
+.login{
+    order: 2;
+    background-color: var(--primary-color);
+    color: var(--white);
+    
+
+}
+.login:hover{
+    background-color: var(--primary-color-dark);
+    cursor: pointer;
+}
+.signup{
+    background-color: var(--white);
+    color: var(--text-dark);
+}
+
+.signup:hover{
+    color: var(--primary-color);
+    cursor: pointer;
+}
